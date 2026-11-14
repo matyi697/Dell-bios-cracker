@@ -1,0 +1,40 @@
+{
+  "name": "dell-bios-cracker",
+  "version": "1.0.0",
+  "description": "This utility is designed to completely reset and remove forgotten BIOS passwords from Dell systems.",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "build:linux": "electron-builder --linux",
+    "build:win": "electron-builder --win",
+    "build:all": "electron-builder --linux --win"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matyi697/Dell-bios-cracker.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/matyi697/Dell-bios-cracker/issues"
+  },
+  "homepage": "https://github.com/matyi697/Dell-bios-cracker#readme",
+  "build": {
+    "appId": "com.matyi.dellbioscracker",
+    "productName": "Dell BIOS Cracker",
+    "directories": {
+      "output": "dist"
+    },
+    "linux": {
+      "target": ["AppImage", "deb"],
+      "category": "Utility"
+    },
+    "win": {
+      "target": ["nsis", "portable"]
+    }
+  },
+  "devDependencies": {
+    "electron": "^45.2.3",
+    "electron-builder": "^24.13.3"
+  }
+}

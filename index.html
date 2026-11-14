@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dell BIOS Cracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <main class="container">
+    <h1>Dell BIOS Cracker</h1>
+    
+    <div class="input-section">
+      <label for="fileInput">Select BIOS Dump File:</label>
+      <input type="file" id="fileInput">
+    </div>
+
+    <button id="startBtn">START PATCHING</button>
+
+    <div class="progress-section">
+      <label for="progressBar">Status: <span id="statusText">Ready</span></label>
+      <progress id="progressBar" value="0" max="100"></progress>
+    </div>
+
+    <div class="log-section">
+      <label for="logOutput">Process Log:</label>
+      <textarea id="logOutput" readonly placeholder="Waiting for operation to start..."></textarea>
+    </div>
+  </main>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
